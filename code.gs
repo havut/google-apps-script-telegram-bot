@@ -12,7 +12,7 @@ function doPost(e) {
           var messageToSend = "Hello world";
         }
     
-        var payload = { method: "sendMessage", chat_id: String(chatId), text: quote, parse_mode: "HTML",};
+        var payload = { method: "sendMessage", chat_id: String(chatId), text: messageToSend, parse_mode: "HTML",};
         var data = {method: "post",payload: payload,};
       
         const scriptProperties = PropertiesService.getScriptProperties(); // example for API key named 'key' under settings in script properties 
